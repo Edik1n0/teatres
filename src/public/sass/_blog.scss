@@ -1,0 +1,46 @@
+.blog {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .container {
+        text-align: center;
+    }
+
+    .blog__body {
+        .carousel-inner {
+            .carousel-item {
+                
+                .bb__item {
+                    margin-top: 40px;
+
+                    .bb__item--img {
+                        height: 440px;
+                    }
+
+                    .bb__item--body {
+                        background: $BlTr;
+                        width: 80%;
+                        text-align: start;
+                        padding: 20px 20px 20px 20px;
+                        margin: 80px 20px 20px 20px;
+                        position: absolute;
+                        top: 40px;
+                        z-index: 9;
+
+                        .bb__item--title,
+                        .bb__item--footer {
+                            margin: 10px;
+                        }
+
+                        .bb__item--desc {
+                            margin: 20px;
+                        }
+
+                        @media (min-width: 320px) and (max-width: 1280px) {
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

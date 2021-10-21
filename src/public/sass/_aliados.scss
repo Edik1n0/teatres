@@ -1,0 +1,68 @@
+.ali {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .container {
+        .ali__body {
+            .ali__section {
+                display: flex;
+                justify-content: space-between;
+                .ali__item {
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    margin: 10px;
+                    width: 30%;
+
+                    .objects {
+                        .ali__item--body {
+                            padding: 8px;
+                            width: 100%;
+                            height: 100px;
+                            .alii__body--img {
+                                width: 180px;
+                                opacity: 80%;
+
+                                &:hover {
+                                    transition: all .6s;
+                                    opacity: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 320px) and (max-width: 1280px) {
+                    display: block;
+
+                    .ali__item {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .ali__footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .ali__footer--inv {
+                width: 280px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                color: $Bl;
+                background: linear-gradient(to bottom right, $Ros, $Mor);
+                
+                &:hover {
+                    transition: all .4s;
+                    background: linear-gradient(to bottom right, $Mor, $Ros);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 1280px) {
+        margin-top: 380px;
+    }
+}

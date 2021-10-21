@@ -1,0 +1,107 @@
+* {
+    font-family: "Mulish", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    color: $Ng;
+}
+
+a {
+    color: $Mor;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.4s;
+        color: $Ros;
+    }
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+// Menú
+
+.navdos,
+.user__nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: $BlTr;
+    .container {
+        width: 100%;
+        .navbar-brand {
+            .d-inline-block {
+                width: 280px;
+            }
+        }
+    }
+
+    .sep__men {
+        padding-right: 60px;
+    }
+
+    @media (min-width: 320px) and (max-width: 1280px) {
+        .container {
+            margin-left: 0px;
+            width: 50%;
+            .navbar-brand {
+                .d-inline-block {
+                    width: 220px;
+                }
+            }
+        }
+
+        .sep__men {
+            padding-right: 0px;
+        }
+    }
+}
+
+// Perfil enfermeras
+
+.enfermera_perfil {
+    .ep__body {
+        margin-top: 40px;
+        border: 2px solid $Gr;
+        border-radius: 8px;
+
+        .ob__img {
+            font-size: 80px;
+        }
+
+        .ep__opt {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .option {
+                width: 30%;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+// Listado de pacientes
+
+.listado__pacientes {
+    .icon-pencil,
+    .icon-phone {
+        font-size: 22px;
+    }
+}
