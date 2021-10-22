@@ -4,6 +4,10 @@
   color: #252525;
 }
 
+body {
+  background: url("../img/bg/bg-teacompano.jpg");
+}
+
 a {
   color: #3d0c60;
   text-decoration: none;
@@ -38,7 +42,11 @@ p {
   position: sticky;
   top: 0px;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.363);
+  background: rgba(255, 255, 255, 0.664);
+}
+.navdos .nav__social,
+.user__nav .nav__social {
+  display: none;
 }
 .navdos .container,
 .user__nav .container {
@@ -61,6 +69,10 @@ p {
   .navdos .container .navbar-brand .d-inline-block,
 .user__nav .container .navbar-brand .d-inline-block {
     width: 220px;
+  }
+  .navdos .nav__social,
+.user__nav .nav__social {
+    display: flex;
   }
   .navdos .sep__men,
 .user__nav .sep__men {
@@ -89,6 +101,10 @@ p {
 .listado__pacientes .icon-pencil,
 .listado__pacientes .icon-phone {
   font-size: 22px;
+}
+
+.bread__interno {
+  margin-top: 40px;
 }
 
 @font-face {
@@ -545,7 +561,7 @@ p {
   height: 440px;
 }
 .blog .blog__body .carousel-inner .carousel-item .bb__item .bb__item--body {
-  background: rgba(255, 255, 255, 0.363);
+  background: rgba(255, 255, 255, 0.664);
   width: 80%;
   text-align: start;
   padding: 20px 20px 20px 20px;
@@ -586,7 +602,7 @@ p {
   justify-content: end;
   align-items: center;
   position: relative;
-  bottom: 440px;
+  bottom: 490px;
   right: 80px;
 }
 .mapa .mapa__body .mb__content {
@@ -605,7 +621,7 @@ p {
   margin-top: 10px;
 }
 .mapa .mapa__body .mb__content .cont__body .cont__body--reg {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .mapa .mapa__body .mb__content .cont__body .cont__body--reg .reg__button {
   background: linear-gradient(to bottom right, #954f99, #3d0c60);
@@ -616,6 +632,9 @@ p {
 .mapa .mapa__body .mb__content .cont__body .cont__body--reg .reg__button:hover {
   transition: all 0.6s;
   background: linear-gradient(to bottom right, #3d0c60, #954f99);
+}
+.mapa .mapa__body .mb__content .cont__body .cont__body--social .mp__ws {
+  font-size: 22px;
 }
 @media (min-width: 320px) and (max-width: 1280px) {
   .mapa .mapa__body {
@@ -680,7 +699,7 @@ p {
 }
 @media (min-width: 320px) and (max-width: 1280px) {
   .ali {
-    margin-top: 380px;
+    margin-top: 440px;
   }
 }
 
@@ -771,6 +790,132 @@ p {
 @media (min-width: 320px) and (max-width: 1280px) {
   .social {
     display: none;
+  }
+}
+
+.bg__nos .bg__nos--img {
+  width: 100%;
+}
+
+.nos {
+  padding: 20px;
+}
+.nos .nos__section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px;
+}
+.nos .nos__section .nos__item {
+  width: 30%;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
+}
+.nos .nos__section .nos__item .nos__item--cont .separador .separador__img {
+  width: 220px;
+}
+.nos .nos__section .nos__item .nos__item--body .item__body--img {
+  width: 220px;
+  border-radius: 50%;
+  margin: 20px;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+  box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+}
+.nos .nos__section .nos__item .nos__item--body .item__body--img:hover {
+  transition: all 0.6s;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+.nos .nos__section .nos__item .nos__item--footer .item__footer--body .footer__body--list {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.nos .nos__section .nos__item .nos__item--footer .item__footer--body .footer__body--list .footer__body--item .footer__body--link {
+  font-size: 24px;
+}
+.nos .nos__footer {
+  padding: 20px;
+  margin-top: 40px;
+}
+.nos .nos__footer .nos__footer--title {
+  margin: 20px;
+}
+.nos .nos__footer .nos__footer--body .filo {
+  display: flex;
+  justify-content: center;
+}
+.nos .nos__footer .nos__footer--body .filo .filo__section {
+  display: block;
+}
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision {
+  text-align: right;
+}
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores {
+  padding: 16px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
+  margin-top: 20px;
+}
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .mision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .vision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .valores__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .mision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .vision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .valores__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .mision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .vision__body--img,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .valores__body--img {
+  width: 220px;
+  margin: 10px;
+}
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .valores__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .valores__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .valores__body {
+  display: block;
+  width: 50%;
+  padding: 10px;
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .nos .nos__section {
+    display: block;
+    padding: 0px;
+    margin-top: 40px;
+  }
+  .nos .nos__section .nos__item {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .nos .nos__footer .nos__footer--body .filo .filo__section .mision,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores {
+    display: block;
+  }
+  .nos .nos__footer .nos__footer--body .filo .filo__section .mision .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .mision .valores__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .vision .valores__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .mision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .vision__body,
+.nos .nos__footer .nos__footer--body .filo .filo__section .valores .valores__body {
+    width: 100%;
+    padding: 0px;
   }
 }
 

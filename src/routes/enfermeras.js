@@ -21,7 +21,8 @@ router.post('/agregar-paciente', async (req, res) => {
         pacienteparentezco,
         pacientediagnostico,
         pacienteservicio} = req.body;
-    const newPaciente = {
+    
+        const newPaciente = {
         pacientenombre,
         pacienteedad,
         pacientetel,

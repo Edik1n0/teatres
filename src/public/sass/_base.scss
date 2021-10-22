@@ -4,6 +4,10 @@
     color: $Ng;
 }
 
+body {
+    background: url('../img/bg/bg-teacompano.jpg');
+}
+
 a {
     color: $Mor;
     text-decoration: none;
@@ -42,6 +46,11 @@ p {
     top: 0px;
     z-index: 10;
     background: $BlTr;
+
+    .nav__social {
+        display: none;
+    }
+
     .container {
         width: 100%;
         .navbar-brand {
@@ -64,6 +73,10 @@ p {
                     width: 220px;
                 }
             }
+        }
+
+        .nav__social {
+            display: flex;
         }
 
         .sep__men {
@@ -104,4 +117,9 @@ p {
     .icon-phone {
         font-size: 22px;
     }
+}
+
+// Miga de pan
+.bread__interno {
+    margin-top: 40px;
 }

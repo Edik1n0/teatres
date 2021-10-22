@@ -5,22 +5,22 @@ const path = require('path');
 
 const { database } = require('./keys');
 
-//Init
+// Init
 const app = express();
 
 //Settings
-app.set('port', process.env.PORT || 4000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('port', process.env.PORT || 4000); // Puerto
+app.set('views', path.join(__dirname, 'views')); // HBS
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs',
+    extname: '.hbs', // Nodejs
     helpers: require('./lib/handlebars')
 }));
 app.set('view engine', '.hbs');
 
-//Middleware
+// Middleware
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
@@ -34,8 +34,9 @@ app.use((req, res, next) => {
 app.use(require('./routes'));
 app.use(require('./routes/auth'));
 app.use(require('./routes/enfermeras'));
+app.use(require('./routes/usuarios'));
 
-//Publicos
+// Publicos
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Servidor
