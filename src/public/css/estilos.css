@@ -819,7 +819,7 @@ p {
 }
 @media (min-width: 320px) and (max-width: 1280px) {
   .ali {
-    margin-top: 440px;
+    margin-top: 0px;
   }
 }
 
@@ -1011,6 +1011,9 @@ p {
   padding: 10px;
 }
 @media (min-width: 320px) and (max-width: 1280px) {
+  .nos {
+    text-align: center;
+  }
   .nos .nos__section {
     display: block;
     padding: 0px;
@@ -1024,6 +1027,7 @@ p {
 .nos .nos__footer .nos__footer--body .filo .filo__section .vision,
 .nos .nos__footer .nos__footer--body .filo .filo__section .valores {
     display: block;
+    text-align: center;
   }
   .nos .nos__footer .nos__footer--body .filo .filo__section .mision .mision__body,
 .nos .nos__footer .nos__footer--body .filo .filo__section .mision .vision__body,
@@ -1037,6 +1041,10 @@ p {
     width: 100%;
     padding: 0px;
   }
+}
+
+.bg__ser .bg__ser--img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
