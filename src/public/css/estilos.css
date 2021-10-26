@@ -580,8 +580,8 @@ p {
 }
 
 .blog {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 .blog .container {
   text-align: center;
@@ -649,6 +649,57 @@ p {
   }
 }
 
+.claims {
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.claims .claims__header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.claims .claims__body {
+  margin-top: 80px;
+}
+.claims .claims__body .claims__section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.claims .claims__body .claims__section .claims__item {
+  display: blocK;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+.claims .claims__body .claims__section .claims__item .claim__img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.claims .claims__body .claims__section .claims__item .claim__img .claim__img--item {
+  width: 120px;
+}
+.claims .claims__body .claims__section .claims__item .claim__txt {
+  padding: 10px;
+  opacity: 0%;
+}
+.claims .claims__body .claims__section .claims__item .claim__txt .separador .separador__img {
+  width: 210px;
+}
+.claims .claims__body .claims__section .claims__item:hover {
+  transition: all 0.6s;
+}
+.claims .claims__body .claims__section .claims__item:hover .claim__txt {
+  transition: all 0.6s;
+  opacity: 100%;
+}
+
 .mapa {
   background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
   padding-top: 20px;
@@ -709,8 +760,8 @@ p {
 }
 
 .ali {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .ali .container .ali__body .ali__section {
   display: flex;
