@@ -13,4 +13,8 @@ router.get('/servicios', (req,res) => {
     res.render('layouts/servicios');
 });
 
+router.get('/formulario-solicitud', (req,res) => {
+    res.render('layouts/formulario-solicitud');
+});
+
 module.exports = router;

@@ -43,4 +43,9 @@ router.get('/enfermeras/lista', async (req,res) => {
     res.render('enfermeras/listado', {pacientes})
 });
 
+router.get('/enfermeras/solicitudes', async (req,res) => {
+    const registros = await pool.query('SELECT * FROM registros');
+    res.render('enfermeras/solicitudes', {registros})
+});
+
 module.exports = router;

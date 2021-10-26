@@ -28,6 +28,17 @@
 -- ALTER TABLE usuarios
 --     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
+-- CREATE TABLE registros (
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     nombreuser VARCHAR(60) NOT NULL,
+--     teluser VARCHAR(60) NOT NULL,
+--     emailuser VARCHAR(60) NOT NULL,
+--     addressuser VARCHAR(120) NOT NULL,
+--     serviceuser VARCHAR(120) NOT NULL,
+--     descuser TEXT,
+--     created_at timestamp NOT NULL DEFAULT current_timestamp
+-- );
+
 -- CREATE TABLE suser(
 --      id INT(11) NOT NULL,
 --      fullname VARCHAR(60) NOT NULL,

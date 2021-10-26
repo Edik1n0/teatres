@@ -38,6 +38,24 @@ p {
     font-size: 18px;
 }
 
+// Solicitud de servicios
+
+.fs__body--body {
+    justify-content: center;
+    padding: 20px;
+
+    .form {
+        background: $Plata;
+        margin-top: 40px;
+        width: 50%;
+        padding: 40px;
+
+        .boton-enviar {
+            justify-content: center;
+        }
+    }
+}
+
 // Menú
 
 .navdos,

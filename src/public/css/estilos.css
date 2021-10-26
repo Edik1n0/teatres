@@ -37,6 +37,20 @@ p {
   font-size: 18px;
 }
 
+.fs__body--body {
+  justify-content: center;
+  padding: 20px;
+}
+.fs__body--body .form {
+  background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
+  margin-top: 40px;
+  width: 50%;
+  padding: 40px;
+}
+.fs__body--body .form .boton-enviar {
+  justify-content: center;
+}
+
 .navdos,
 .user__nav {
   position: sticky;
@@ -546,6 +560,24 @@ p {
     width: 100%;
   }
 }
+.high .container .high__footer {
+  display: flex;
+  justify-content: center;
+}
+.high .container .high__footer .high__footer--link {
+  width: 320px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: linear-gradient(to bottom right, #954f99, #3d0c60);
+}
+.high .container .high__footer .high__footer--link:hover {
+  transition: all 0.4s;
+  background: linear-gradient(to bottom right, #3d0c60, #954f99);
+}
 
 .blog {
   margin-top: 60px;
@@ -582,6 +614,40 @@ p {
     top: 0px;
   }
 }
+.blog .blog__body .carousel__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 380px;
+}
+.blog .blog__body .carousel__button .carousel__button--text {
+  width: 180px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: linear-gradient(to bottom right, #954f99, #3d0c60);
+}
+.blog .blog__body .carousel__button .carousel__button--text:hover {
+  transition: all 0.4s;
+  background: linear-gradient(to bottom right, #3d0c60, #954f99);
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .blog .blog__body .carousel-inner {
+    height: 580px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .blog .blog__body .carousel-inner .carousel-item .bb__item .bb__item--img {
+    height: 540px;
+  }
+  .blog .blog__body .carousel__button {
+    top: 480px;
+  }
+}
 
 .mapa {
   background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
@@ -597,7 +663,7 @@ p {
 }
 .mapa .mapa__body {
   margin-top: 20px;
-  z-index: 9;
+  z-index: 0;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -663,12 +729,15 @@ p {
   height: 100px;
 }
 .ali .container .ali__body .ali__section .ali__item .objects .ali__item--body .alii__body--img {
-  width: 180px;
+  width: 220px;
   opacity: 80%;
 }
 .ali .container .ali__body .ali__section .ali__item .objects .ali__item--body .alii__body--img:hover {
   transition: all 0.6s;
   opacity: 100%;
+}
+.ali .container .ali__body .ali__section .ali__item .objects .ali__item--body .kino {
+  width: 180px;
 }
 @media (min-width: 320px) and (max-width: 1280px) {
   .ali .container .ali__body .ali__section {

@@ -19,13 +19,17 @@
                             width: 100%;
                             height: 100px;
                             .alii__body--img {
-                                width: 180px;
+                                width: 220px;
                                 opacity: 80%;
 
                                 &:hover {
                                     transition: all .6s;
                                     opacity: 100%;
                                 }
+                            }
+
+                            .kino {
+                                width: 180px;
                             }
                         }
                     }
