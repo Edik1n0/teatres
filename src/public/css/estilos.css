@@ -822,9 +822,14 @@ p {
   transition: all 0.4s;
   background: linear-gradient(to bottom right, #3d0c60, #954f99);
 }
-@media (min-width: 320px) and (max-width: 1280px) {
+@media (min-width: 320px) and (max-width: 410px) {
   .ali {
-    margin-top: 0px;
+    margin-top: 580px;
+  }
+}
+@media (min-width: 411px) and (max-width: 1280px) {
+  .ali {
+    margin-top: 500px;
   }
 }
 

@@ -83,10 +83,19 @@
 -- ALTER TABLE pacientes
 --     MODIFY evolucion VARCHAR(500) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
--- ALTER TABLE pacientes
---     ADD pacientecorreo VARCHAR(120);
+-- ALTER TABLE blogdos
+--     ADD enlace VARCHAR() NOT NULL,
 
--- CREATE TABLE blog(
+-- ALTER TABLE blogdos
+--     ADD piefoto VARCHAR() NOT NULL,
+
+-- ALTER TABLE blogdos
+--     ADD miniatura VARCHAR() NOT NULL,
+
+-- ALTER TABLE blogdos
+--     ADD paragcinco VARCHAR() NOT NULL,
+
+-- CREATE TABLE blogdos (
 --     id INT(11) NOT NULL,
 --     tema VARCHAR(30) NOT NULL,
 --     urlimg VARCHAR(60) NOT NULL,
@@ -103,7 +112,6 @@
 --     subtitlecinco VARCHAR(60) NOT NULL,
 --     paragseis TEXT NOT NULL,
 --     subtitleseis VARCHAR(60) NOT NULL,
---     paragseis TEXT NOT NULL,
 --     city VARCHAR(60) NOT NULL,
 --     autor VARCHAR(60) NOT NULL,
 --     created_at timestamp NOT NULL DEFAULT current_timestamp,

@@ -35,6 +35,7 @@ app.use(require('./routes'));
 app.use(require('./routes/auth'));
 app.use(require('./routes/enfermeras'));
 app.use(require('./routes/usuarios'));
+app.use(require('./routes/dia-saludable'));
 
 // Publicos
 app.use(express.static(path.join(__dirname, 'public')));

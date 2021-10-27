@@ -66,7 +66,11 @@
         }
     }
 
-    @media (min-width: 320px) and (max-width: 1280px) {
-        margin-top: 0px;
+    @media (min-width: 320px) and (max-width: 410px) {
+        margin-top: 580px;
+    }
+
+    @media (min-width: 411px) and (max-width: 1280px) {
+        margin-top: 500px;
     }
 }
