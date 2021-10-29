@@ -13,7 +13,14 @@ router.post('/formulario-solicitud', async (req, res) => {
         descuser
     };
     await pool.query ('INSERT INTO registros SET ?', [newReg]);
-    res.send('recibido');
+    res.redirect('/');
+});
+
+router.post('/formulario-socios', async (req, res) => {
+    const {titular, cargo, contacto, ecorpo, addcorpo, alianza, descorpo} = req.body;
+    const newAli = {titular, cargo, contacto, ecorpo, addcorpo, alianza, descorpo};
+    await pool.query ('INSERT INTO aliados SET ?', [newAli]);
+    res.redirect('/');
 });
 
 module.exports = router;

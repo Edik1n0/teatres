@@ -65,6 +65,18 @@
 --     ADD CONSTRAINT fk_pacient FOREIGN KEY (nurse_id) REFERENCES enfermeras(id)
 -- );
 
+-- CREATE TABLE aliados(
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     titular VARCHAR(120) NOT NULL,
+--     cargo VARCHAR(60) NOT NULL,
+--     contacto VARCHAR(120) NOT NULL,
+--     ecorpo VARCHAR(100) NOT NULL,
+--     addcorpo VARCHAR(120) NOT NULL,
+--     alianza VARCHAR(120) NOT NULL,
+--     descorpo VARCHAR(120) NOT NULL,
+--     created_at timestamp NOT NULL DEFAULT current_timestamp,
+-- );
+
 -- CREATE TABLE enfermeras(
 --     id INT(11) NOT NULL,
 --     enfermera VARCHAR(16) NOT NULL,
