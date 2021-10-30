@@ -34,4 +34,9 @@ router.get('/formulario-socios', (req, res) => {
     res.render('layouts/formulario-socios');
 });
 
+router.get('/msgok', (req, res) => {
+    req.flash('success', 'Sus datos se han enviado correctamente');
+    res.render('layouts/home');
+});
+
 module.exports = router;

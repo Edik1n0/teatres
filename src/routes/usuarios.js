@@ -13,6 +13,7 @@ router.post('/formulario-solicitud', async (req, res) => {
         descuser
     };
     await pool.query ('INSERT INTO registros SET ?', [newReg]);
+    req.flash('success', 'Sus datos se han enviado correctamente');
     res.redirect('/');
 });
 
@@ -20,6 +21,7 @@ router.post('/formulario-socios', async (req, res) => {
     const {titular, cargo, contacto, ecorpo, addcorpo, alianza, descorpo} = req.body;
     const newAli = {titular, cargo, contacto, ecorpo, addcorpo, alianza, descorpo};
     await pool.query ('INSERT INTO aliados SET ?', [newAli]);
+    req.flash('success', 'Sus datos se han enviado correctamente');
     res.redirect('/');
 });
 

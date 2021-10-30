@@ -43,12 +43,12 @@
                             </a>
                             {{!-- dropdown-toggle --}}
                             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                {{#if user}}
+                                <li><a class="dropdown-item" href="/salir">Cerrar sesión</a></li>
+                                {{else}}
+                                <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                                <li><a class="dropdown-item" href="/control">Admin</a></li>
+                                {{/if}}
                             </ul>
                         </li>
                     </ul>

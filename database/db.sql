@@ -84,6 +84,17 @@
 --     nombre VARCHAR(100) NOT NULL
 -- );
 
+-- CREATE TABLE personal(
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     pernombre VARCHAR(16) NOT NULL,
+--     percargo VARCHAR(60) NOT NULL,
+--     perfoto VARCHAR(16) NOT NULL,
+--     perdate VARCHAR(60) NOT NULL,
+--     perid VARCHAR(16) NOT NULL,
+--     peruser VARCHAR(60) NOT NULL,
+--     perpass VARCHAR(100) NOT NULL
+-- );
+
 -- ALTER TABLE pacientes
 --     ADD evolucion VARCHAR(500) NOT NULL,
 --     ADD pacientepeso VARCHAR(20) NOT NULL,

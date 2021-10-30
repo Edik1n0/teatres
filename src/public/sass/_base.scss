@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('../img/bg/bg-teacompano.jpg');
+    background: url("../img/bg/bg-teacompano.jpg");
 }
 
 a {
@@ -140,4 +140,30 @@ p {
 // Miga de pan
 .bread__interno {
     margin-top: 40px;
+}
+
+// Mensaje éxito
+
+.success__message {
+    position: absolute;
+    top: 220px;
+    z-index: 11;
+    width: 50%;
+    .alert {
+        width: 60%;
+        .icon-cancel {
+            cursor: pointer;
+        }
+    }
+}
+
+// Formularios
+
+@media (min-width: 320px) and (max-width: 1280px) {
+    .fs__body--body {
+        .form {
+            width: 100%;
+            padding: 20px;
+        }
+    }
 }

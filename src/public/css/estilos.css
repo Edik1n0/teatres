@@ -121,6 +121,25 @@ p {
   margin-top: 40px;
 }
 
+.success__message {
+  position: absolute;
+  top: 220px;
+  z-index: 11;
+  width: 50%;
+}
+.success__message .alert {
+  width: 60%;
+}
+.success__message .alert .icon-cancel {
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 1280px) {
+  .fs__body--body .form {
+    width: 100%;
+    padding: 20px;
+  }
+}
 @font-face {
   font-family: "fontello";
   src: url("../font/fontello.eot?52594571");
