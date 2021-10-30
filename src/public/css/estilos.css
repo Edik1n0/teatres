@@ -803,6 +803,17 @@ p {
     width: 100%;
   }
 }
+.ali .container .ali__body .carousel {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ali .container .ali__body .carousel .carousel-item {
+  height: 280px;
+  align-items: center;
+}
+.ali .container .ali__body .carousel .carousel-item .ali__body--img {
+  width: 220px;
+}
 .ali .container .ali__footer {
   width: 100%;
   display: flex;
@@ -826,10 +837,22 @@ p {
   .ali {
     margin-top: 580px;
   }
+  .ali .container .ali__body .carousel .carousel-item {
+    height: 320px;
+  }
+  .ali .container .ali__body .carousel .carousel-item .carousel-caption {
+    display: block;
+  }
 }
 @media (min-width: 411px) and (max-width: 1280px) {
   .ali {
     margin-top: 500px;
+  }
+  .ali .container .ali__body .carousel .carousel-item {
+    height: 320px;
+  }
+  .ali .container .ali__body .carousel .carousel-item .carousel-caption {
+    display: block;
   }
 }
 

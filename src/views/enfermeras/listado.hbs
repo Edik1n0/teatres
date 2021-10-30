@@ -2,7 +2,7 @@
 
 {{> navdos}}
 
-<div class="container">
+<div class="container m-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Inicio</a></li>
@@ -27,7 +27,7 @@
         <tbody>
             <tr>
                 <th scope="row">{{id}}</th>
-                <td><a href="/control/historias/individual/{{id}}">{{pacientenombre}}</a></td>
+                <td><a href="/enfermeras/individual/{{id}}">{{pacientenombre}}</a></td>
                 <td>{{pacienteedad}}</td>
                 <td>{{pacienteeps}}</td>
                 <td>{{pacientetel}}</td>
@@ -51,3 +51,5 @@
         <a href="/enfermeras/agregar" class="btn btn-danger">Añadir nuevo paciente</a>
     </div>
 </div>
+
+{{> footer}}

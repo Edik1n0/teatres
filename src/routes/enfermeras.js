@@ -43,9 +43,22 @@ router.get('/enfermeras/lista', async (req,res) => {
     res.render('enfermeras/listado', {pacientes})
 });
 
+router.get('/enfermeras/solicitud/:id', async (req,res) => {
+    const {id} = req.params;
+    const registros = await pool.query('SELECT * FROM registros WHERE id = ?', [id]);
+    res.render('enfermeras/solicitud', {registros: registros[0]});
+});
+
+
 router.get('/enfermeras/solicitudes', async (req,res) => {
     const registros = await pool.query('SELECT * FROM registros');
     res.render('enfermeras/solicitudes', {registros})
+});
+
+router.get('/enfermeras/individual/:id', async (req,res) => {
+    const {id} = req.params;
+    const pacientes = await pool.query('SELECT * FROM pacientes WHERE id = ?', [id]);
+    res.render('enfermeras/individual', { pacientes: pacientes[0] });
 });
 
 module.exports = router;

@@ -10,7 +10,6 @@ router.get('/dia-saludable', async (req, res) => {
 router.get('/dia-saludable/articulos/:id', async (req, res) => {
     const {id} = req.params;
     const blogdos = await pool.query('SELECT * FROM blogdos WHERE id = ?', [id]);
-    console.log(blogdos);
     res.render('dia-saludable/articulo', { blog: blogdos[0] });
 });
 

@@ -33,6 +33,7 @@ app.use((req, res, next) => {
 //Rutas
 app.use(require('./routes'));
 app.use(require('./routes/auth'));
+app.use(require('./routes/control'));
 app.use(require('./routes/enfermeras'));
 app.use(require('./routes/usuarios'));
 app.use(require('./routes/dia-saludable'));
